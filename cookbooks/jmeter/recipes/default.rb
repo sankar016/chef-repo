@@ -7,7 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 remote_file "apache-jmeter-2.11.tgz" do
-  source "http://mirrors.gigenet.com/apache//jmeter/binaries/apache-jmeter-2.11.tgz"
+#  source "http://mirrors.gigenet.com/apache//jmeter/binaries/apache-jmeter-2.11.tgz"
+
+source "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.11.tgz"
 
   not_if { File.exists? "apache-jmeter-2.11.tgz" }
 
