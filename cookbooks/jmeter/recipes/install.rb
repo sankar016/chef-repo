@@ -30,7 +30,7 @@ end
 
 execute "extract jmeter" do
 	cwd "#{node["jmeter"]["tmp_install"]}" 
-	command "tar -xzvf "#{node["jmeter"]["tmp_install"]}/apache-jmeter-2.11.tgz"
+	command "tar -xzvf #{node["jmeter"]["tmp_install"]}/apache-jmeter-2.11.tgz"
         not_if { File.exists? "apache-jmeter-2.11.tgz" }
 	user "#{node["jmeter"]["user"]}"
         group "#{node["jmeter"]["user"]}"
