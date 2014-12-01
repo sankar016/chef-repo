@@ -1,0 +1,10 @@
+{
+  "name": "jmeter_slave",
+  "description": "Jmeter slave server",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[java::openjdk]",
+    "recipe[jmeter::install]",
+    "recipe[jmeter::slave]"
+  ]
+}

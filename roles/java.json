@@ -1,0 +1,8 @@
+{
+  "name": "java",
+  "description": "java",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[java::openjdk]"
+  ]
+}

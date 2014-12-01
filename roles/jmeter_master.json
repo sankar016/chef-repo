@@ -1,0 +1,10 @@
+{
+  "name": "jmeter_master",
+  "description": "Jmeter Master server",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[java::openjdk]",
+    "recipe[jmeter::install]",
+    "recipe[jmeter::master]"
+  ]
+}
